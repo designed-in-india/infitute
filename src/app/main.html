@@ -1,0 +1,30 @@
+<div class="main-container">
+  <section layout="row" flex>
+    <left-floating-menu></left-floating-menu>
+    <md-content flex layout-padding>
+      <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+        <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+        <md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
+        <md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
+        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+        <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+        <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+        -->
+      </md-nav-bar>
+      <div class="ext-content">
+        External content for `<span>{{currentNavItem}}</span>`
+      </div>
+          <md-button ng-click="toggleLeft()"
+            class="md-primary" hide-gt-md>
+            Toggle left
+          </md-button>
+      </div>
+    </md-content>
+  </section>
+  <!--<fountain-header></fountain-header>
+  <main class="main">
+    <fountain-title></fountain-title>
+    <fountain-techs></fountain-techs>
+  </main>
+  <fountain-footer></fountain-footer>-->
+</div>

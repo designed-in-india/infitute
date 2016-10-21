@@ -110,3 +110,23 @@ a:hover {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
 }
+ul.ivh-treeview{
+  list-style: none;
+  padding-left: 20px;
+}
+.icon-person{
+  background: url(../icons/ios-person.svg) no-repeat;
+  background-size: contain;
+}
+.icon-email{
+  background: url(../icons/ios-email.svg) no-repeat;
+  background-size: contain;
+}
+.icon-arrow-left{
+  background: url(../icons/chevron-left.svg) no-repeat;
+  background-size: contain;
+}
+.icon-arrow-right{
+  background: url(../icons/chevron-right.svg) no-repeat;
+  background-size: contain;
+}

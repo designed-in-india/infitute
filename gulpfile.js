@@ -25,13 +25,19 @@ function reloadBrowserSync(cb) {
 function watch(done) {
   gulp.watch([
     conf.path.src('index.html'),
+    conf.path.src('app/main.html'),
+    conf.path.src('app/components/**/*.html'),
     'bower.json'
   ], gulp.parallel('inject'));
 
-  gulp.watch(conf.path.src('app/**/*.html'), reloadBrowserSync);
   gulp.watch([
     conf.path.src('**/*.css')
   ], gulp.series('styles'));
-  gulp.watch(conf.path.src('**/*.js'), gulp.series('inject'));
+
+  gulp.watch([
+    conf.path.src('*.js'),
+    conf.path.src('app/*.js'),
+    conf.path.src('app/components/**/*.js')
+  ], gulp.series('inject'));
   done();
 }

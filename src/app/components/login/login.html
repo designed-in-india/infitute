@@ -1,0 +1,20 @@
+<md-content style="width:35%; margin:0 auto;" ng-cloak>
+    <md-card>
+        <div style="margin: 0 20px;">
+            <md-input-container class="md-block">
+                <md-icon class="icon-person" aria-label="Home"></md-icon>
+                <input ng-model="user.title" placeholder="Name (required)" ng-required="true">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <md-icon class="icon-email" aria-label="Home"></md-icon>
+                <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
+            </md-input-container>
+        </div>
+        <div style="margin-bottom:10px;">
+            <md-card-actions layout="row" layout-align="center center" layout-wrap>
+                <md-button class="md-raised md-primary">Log in</md-button>
+            </md-card-actions>
+        </div>
+        
+    </md-card>
+</md-content>

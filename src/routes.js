@@ -11,5 +11,17 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('app', {
       url: '/',
       component: 'app'
+    })
+    .state('app.login', {
+      url: 'login',
+      component: 'login'
+    })
+    .state('app.landing', {
+      url: 'landing',
+      component: 'landing'
+    })
+    .state('app.videos', {
+      url: 'videos',
+      component: 'videos'
     });
 }
